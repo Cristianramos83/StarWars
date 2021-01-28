@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTrilateracion", "TestTrilateracion\TestTrilateracion.csproj", "{BC336E70-5945-4CDB-BE89-3DBB9118F769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC336E70-5945-4CDB-BE89-3DBB9118F769}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC336E70-5945-4CDB-BE89-3DBB9118F769}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC336E70-5945-4CDB-BE89-3DBB9118F769}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC336E70-5945-4CDB-BE89-3DBB9118F769}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55FA91AF-B70B-40AC-AE2A-D858D78D691B}
+	EndGlobalSection
+EndGlobal
