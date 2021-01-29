@@ -6,7 +6,7 @@ namespace Satellite.Common.Functions
 {
     public static class CalculateThreeCircleIntersection
     {
-        private static double EPSILON = 0.000001;
+        private static double EPSILON = 0.00001;
         public static double[] Calculate(double x0, double y0, double r0,
                                          double x1, double y1, double r1,
                                          double x2, double y2, double r2)

@@ -27,8 +27,8 @@ namespace TestTrilateracion
 
             bool encontro = calculateThreeCircleIntersection.calculate(
                 -500,-200, 500,
-                100,-100, 515.5,
-                500, 100, 542.7);
+                500,-100, 515.5,
+                500, 100, 595.86231824769629);
 
            
             Console.ReadKey();
