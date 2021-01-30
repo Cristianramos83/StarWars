@@ -31,7 +31,7 @@ namespace Satellite.Persistence.Database.Configuration
                 {
                     SatelliteId = 2,
                     Name = "Skywalker",
-                    CoordinateX = -100,
+                    CoordinateX = 500,
                     CoordinateY = -100
                });
                satellites.Add(new Satellite.Domain.Satellite
