@@ -2,7 +2,7 @@
 
 namespace Satellite.Persistence.Database.Migrations
 {
-    public partial class Initialmigration : Migration
+    public partial class firstmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,7 +37,7 @@ namespace Satellite.Persistence.Database.Migrations
                 schema: "Satellite",
                 table: "Satellites",
                 columns: new[] { "SatelliteId", "CoordinateX", "CoordinateY", "Distance", "Message", "Name" },
-                values: new object[] { 2, -100.0, -100.0, 0.0, null, "Skywalker" });
+                values: new object[] { 2, 500.0, -100.0, 0.0, null, "Skywalker" });
 
             migrationBuilder.InsertData(
                 schema: "Satellite",

@@ -61,7 +61,7 @@ namespace Satellite.Persistence.Database.Migrations
                         new
                         {
                             SatelliteId = 2,
-                            CoordinateX = -100.0,
+                            CoordinateX = 500.0,
                             CoordinateY = -100.0,
                             Distance = 0.0,
                             Name = "Skywalker"

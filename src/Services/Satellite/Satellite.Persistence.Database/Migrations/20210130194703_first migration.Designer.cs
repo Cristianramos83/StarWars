@@ -9,8 +9,8 @@ using Satellite.Persistence.Database;
 namespace Satellite.Persistence.Database.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210127210915_Initial migration")]
-    partial class Initialmigration
+    [Migration("20210130194703_first migration")]
+    partial class firstmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,7 +63,7 @@ namespace Satellite.Persistence.Database.Migrations
                         new
                         {
                             SatelliteId = 2,
-                            CoordinateX = -100.0,
+                            CoordinateX = 500.0,
                             CoordinateY = -100.0,
                             Distance = 0.0,
                             Name = "Skywalker"
