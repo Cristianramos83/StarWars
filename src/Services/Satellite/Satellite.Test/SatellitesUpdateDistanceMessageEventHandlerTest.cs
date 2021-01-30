@@ -31,7 +31,8 @@ namespace Satellite.Test
             var context = ApplicationDbContextInMemory.Get();
 
             var satellites = new List<Satellite.Domain.Satellite>();
-
+            context.Satellites.RemoveRange(context.Satellites.Select(x => x).ToList());
+            context.SaveChanges();
 
             satellites.Add(
             new Satellite.Domain.Satellite
@@ -56,7 +57,7 @@ namespace Satellite.Test
                 CoordinateY = 100
             });
 
-            context.Satellites.UpdateRange(satellites);
+            context.Satellites.AddRange(satellites);
 
             context.SaveChanges();
 
@@ -92,7 +93,7 @@ namespace Satellite.Test
             var query =new SatelliteQueryService(context);
 
             var getSource = query.GetSource();            
-            Assert.AreEqual($"Position X:-0,5422119231203366 ;Position Y:-223,27913076879705 ; message:este es un mensaje secreto ", $"Position X:{getSource.Position.X} ;Position Y:{getSource.Position.Y} ; message:{getSource.Message}");
+            Assert.AreEqual($"Position X:-0,5422119231201918 ;Position Y:-223,2791307687972 ; message:este es un mensaje secreto ", $"Position X:{getSource.Position.X} ;Position Y:{getSource.Position.Y} ; message:{getSource.Message}");
 
         }
         [TestMethod]
@@ -101,6 +102,9 @@ namespace Satellite.Test
             var context = ApplicationDbContextInMemory.Get();
 
             var satellites = new List<Satellite.Domain.Satellite>();
+
+            context.Satellites.RemoveRange(context.Satellites.Select(x=>x).ToList());
+            context.SaveChanges();
 
 
             satellites.Add(
